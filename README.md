@@ -1,2 +1,2 @@
-# bootcamp-dio
-Desafio de projeto sobre GIT/GitHub
+# repositório-bootcamp-dio
+Repositório que será usado para o bootcamp da DIO.
