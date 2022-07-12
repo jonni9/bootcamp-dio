@@ -1,24 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
 body{
     background-color: #4292bf;
+}
+
+#title{
+    font-family: 'Secular One', sans-serif;
 }
 
 #top{
     background-color: #357599;
     padding: 15px;
-    border: 3px solid #295872;
+    border: 3px dotted #295872;
     text-align: center;
-}
-#title, .subtitle, .posttitle, .cttitle{
-    color: #052538;
-    font-family: sans-serif;
+    
 }
 .artg{
-    color: rgb(0, 10, 7);
+    color: rgb(0, 0, 0);
     font-size: 20px;
+    font-family: 'Cormorant SC', serif;
+    
 }
 
 .atc{
     background-color: #357599;
     padding: 13px;
-    border: 3px solid #295872;
+    border: 3px dashed #295872;
 }
