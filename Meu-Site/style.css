@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
 
 body{
     background-color: #4292bf;
+    width: 900px;
+    margin: auto;
+    text-align: center;
 }
 
 #title{
@@ -19,7 +23,7 @@ body{
 .artg{
     color: rgb(0, 0, 0);
     font-size: 20px;
-    font-family: 'Cormorant SC', serif;
+    font-family: 'Ubuntu', sans-serif;
     
 }
 
@@ -27,4 +31,16 @@ body{
     background-color: #357599;
     padding: 13px;
     border: 3px dashed #295872;
+}
+
+h3{
+    font-family: 'Secular One', sans-serif;
+}
+
+
+#ctt, a{
+    list-style-type: none;
+    padding-left: 8px;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
 }
