@@ -79,7 +79,7 @@ a:hover{
     height: 100px;
     width: 100px;
     position: absolute;
-    top: 0;
+    top: 0px;
     right: 0;
     display: flex;
     justify-content: center;
@@ -89,3 +89,73 @@ a:hover{
 
 }
 
+.checkbox .trace {
+    width: 50px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+ } 
+
+ .checkbox .trace:nth-child(1){
+    top: 26px;
+    transform: rotate();
+}
+
+.checkbox .trace:nth-child(2) {
+    top: 46px;
+    transform: rotate();
+}
+
+.checkbox .trace:nth-child(3) {
+    top: 66px;
+    transform: rotate();
+}
+
+#toggle {
+    display: none;
+}
+
+/*MENU*/
+
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: transparent;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0px #ffffff;
+    z-index: -1;
+    transition: 400ms ease-in-out 0;
+}
+
+.menu-items{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms ease-in-out 0;
+}
+
+.menu-items ul{
+    list-style-type: none;
+}
+
+.menu-items ul li{
+    margin: 10px 0;
+    color: #000B49;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
