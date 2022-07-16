@@ -45,7 +45,7 @@ h2{
 
 .social-media a {
     text-decoration: none;
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
     font-size: 24px;
     padding: 1rem 4rem;
     border: 1px solid #ffffff;
@@ -62,7 +62,7 @@ a {
 
 a:hover{
     color: #1A0841;
-    background-color: #92E6E6;
+    background-color: #41b3cf;
 }
 
 @keyframes backgroundTransition{
@@ -194,15 +194,172 @@ a:hover{
 }
 
 #toggle:checked + .checkbox {
-    background-color: #92E6E6;
+    background-color: #ffffff;
 }
 
 #toggle:checked ~ .menu {
-    box-shadow: 0px 0px 0px 100vmax #92E6E6;
+    box-shadow: 0px 0px 0px 100vmax #ffffff;
     z-index: 1;
 }
 
 #toggle:checked ~.menu-items{
     visibility: visible;
     opacity: 1;
+}
+
+
+/*CARDS*/
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.card {
+    height: 300px;
+    width: 400px;
+    margin: 3rem 0 0;
+    background-image: url("code.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    filter: grayscale(0.7);
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+ 
+.card p {
+    font-family: 'Poiret One', cursive;
+    background-color: rgb(50, 50, 50);
+}
+
+.card-text {
+    width: 40%;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.card-wrapper{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-wrapper::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: block;
+    border: 1px solid #FF0000;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card-wrapper h2{
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.card-wrapper p {
+    font-size: 0;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.card:hover {
+    filter: unset;
+}
+
+.card:hover > .card-wrapper::before {
+    opacity: 1;
+    width: 350px;
+    height: 250px;
+}
+
+.card:hover > .card-wrapper p {
+    font-size: 14px;
+    opacity: 1;
+    visibility: visible;
+}
+
+/*FOOTER*/
+
+.footer {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9B0000;
+}
+
+/*RESPONSIVO*/
+@media (max-width: 800px) {
+    .social-media{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        margin-top: 0;
+    }
+
+    .card-container{
+        flex-direction: column;
+    }
+
+    .container .card-container:nth-child(1), 
+    .container .card-container:nth-child(3){
+        flex-direction: column-reverse;
+    }
+
+    .card {
+        height: 250px;
+        width: 250px;
+        text-align: center;
+    }
+
+    .card-text{
+        width: 90%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .card:hover > .card-wrapper::before {
+        height: 210px;
+        width: 210px;
+    }
+
+    .menu-items {
+        justify-content: center;
+        align-items: center;
+    }
 }
